@@ -1,4 +1,5 @@
 #Wajid simulator 2023
+# Copy this code into https://www.programiz.com/python-programming/online-compiler/
 import time
 import random
 choices = 0
