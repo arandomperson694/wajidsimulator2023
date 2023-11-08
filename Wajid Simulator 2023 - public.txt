@@ -1,0 +1,375 @@
+#Wajid simulator 2023
+import time
+import random
+choices = 0
+
+print("Loading...")
+
+
+print("* It does not matter if you use upper or lower case letters anywhere in this code")
+time.sleep(1)
+print("* Your actions may have consequences")
+time.sleep(1)
+print("* Cheat codes can be used on the job selector")
+print()
+time.sleep(1)
+print("Wajid Simulator 2023")
+
+#Main Code
+
+while True:
+
+  print("New Game")
+  print()
+  print("Choose a job:")
+  print("\n a) Teacher")
+  print("\n b) Astronaut")
+  print("\n c) Serial Killer")
+  print("\n d) Lawyer")
+  print("\n e) Chef")
+  print()
+  job = input("Choice: ")
+
+  if job.lower() == "a": #Teacher
+    career = "Teacher"
+    print("You have chosen to be a teacher")
+    print()
+    #Choice 1
+    choices = choices + 1
+    print("Which type of teacher would you like to be?")
+    print("\n a) Chemistry")
+    print("\n b) Geography")
+    print("\n c) Computer Science")
+    print()
+    choice1 = input("Choice: ")
+    if choice1.lower() == "a": # Chemistry Teacher
+      print("You blew up the science block and died")
+      print("Radioactive Ending (1/6)")
+
+    elif choice1.lower() == "b": #Geography Teacher
+      print("You have been hired as a Geography teacher at the worlds worst high school")
+      print()
+      #Choice 2
+      choices = choices + 1
+      print("What is the capital of the UK?")
+      print()
+      print("\n a) Birmingham")
+      print("\n b) Manchester")
+      print()
+      choice2 = input("Choice: ")
+      if choice2.lower() != "london":
+        print("You got fired for being a bad teahcer")
+        print("Fired ending (3/6)")
+      elif choice2.lower() == "london":
+        print("Well done you got it right")
+        print("Good Geography teacher ending (4/6)")
+      
+        
+
+
+    elif choice1.lower() == "c": #Computer Science Teacher
+      #Choice 2
+      choices = choices + 1
+      print("Where do you want to teach?")
+      print("\n a) Russia - become the python warrior")
+      print("\n b) Run down secondary school")
+      print()
+      choice2 = input("Choice: ")
+      if choice2.lower() == "a":
+        print("You got killed for claiming to be a warrior")
+        print("Assasination Ending (4/6)")
+        
+      elif choice2.lower() == "b":
+        print("You teach awful Year 10s who can barely code")
+        print("Normal Wajid Ending (5/6)")
+
+  
+    
+  elif job.lower() =="b": #Astronaut
+    career = "Astronaut"
+    print()
+    print("You have chosen to be an Astronaut")
+    print()
+    #Choice 1
+    choices = choices + 1
+    print("The Wajid 1 rocket can be lauched. Do you...")
+    print("\n a) Launch now without safety check")
+    print("\n b) Launch in 60s with safety check")
+    print()
+    choice1 = input("Choice: ")
+    if choice1.lower() == "a":
+      print("The rocket blew up and you died.")
+      print(" Explosive Ending (6/6)")
+
+    elif choice1.lower() == "b":
+      for i in range(60, 0, -1):
+        time.sleep(1)
+        print(i)
+      print("Wajid 1 Rocket has launched sucsessfully and is in orbit")
+      
+      #Choice 2
+      choices = choices + 1
+      print("Choose which planet to go to: ")
+      print("\n a) Mars : -63 Celcius ")
+      print("\n b) Jupiter : -110 Celcius ")
+      print("\n c) Venus : 464 Celcius ")
+      choice2 = input()
+      if choice2.lower() == "a": #Mars
+        print("You survived and arrive on Mars")
+        #Choice 3
+        choices = choices + 1
+        print("Its time to return to earth. Do you...")
+        print("\n a) Return to Earth")
+        print("\n b) Live your life on Mars")
+        print()
+        choice3 = input("Choice: ")
+      elif choice2.lower() == "b": #Jupiter (attempt)
+        choices = choices + 1
+        choice3 = "IUBX25b-d"
+        if choice3.lower() == "a" or choice3 == "IUBX25b-d":
+          #Choice 4
+          choices = choices + 1
+          print("Your ship crash lands in Australia. Where do you want to live?")
+          print("\n a) In the sydney opera house")
+          print("\n b) In the desert")
+          choice4 = input()
+          if choice4.lower() == "a": #Opera
+            print("You become the worlds best opera singer")
+            print("Singer ending (7/6)")
+          elif choice4.lower() == "b": #Desert
+            print("You die of starvation")
+            print("Starvation Ending (8/6)")
+      elif choice3.lower() == "b":
+        print("You enjoy the rest of your life as a Marshan with someone who looks strangely familliar...")
+        print("Marshan Ending (9/6)")
+    
+      elif choice2.lower() == "c":
+        print("The temperature was too hot and you died. Hot Weather Ending (3/6)")
+        print("Hot Weather Ending (10/6)")
+
+  elif job.lower() == "c": #Serial Killer
+    career = "Serial Killer"
+    print()
+    print("DLC : Wajid Simulator 2023 - Serial Killer")
+    code = input("Please enter the DLC code to continue: ")
+    #Code = HV78F790vt8-b
+    while code != "HV78F790vt8-b":
+      print()
+      print("Authenticating...")
+      time.sleep(2)
+      print("DLC code not accepted")
+      code = input("Please enter the DLC code to continue: ")
+    print()
+    print("Authenticating...")
+    time.sleep(2)
+    print("DLC code accepted")
+    print()
+    #Choice 1 - Serial Killer
+    choices = choices + 1
+    print("Who do you want to kill first?")
+    print("\n a) John")
+    print("\n b) Ibrahim")
+    print("\n c) Michael")
+    print("\n d) Maria")
+    print()
+    choice1 = input("Choice: ")
+    if choice1.lower() != "c":
+      print("Michael saw you and you were arrested")
+      print("Snitch ending")
+    elif choice1.lower() == "c":
+      print("You stabbed Michael 7 times and dumped his body in the woods")
+      #Choice 2 - Serial Killer
+      choices = choices + 1
+      print("You think elderly Mrs Wilson has seen you. Do you...")
+      print("\n a) Kill her")
+      print("\n b) Not kill her")
+      print()
+      choice2 = input("Choice: ")
+      if choice2.lower() == "a":
+        print("Mrs Wilson punched you and you died")
+        print("Broken Ribs Ending (11/6)")
+      elif choice2.lower() == "b":
+        print("Mrs Wilson Reported you to the FBI and you have to go to court")
+        #Choice 3
+        choices = choices + 1
+        print("You might lose the court case. Do you...")
+        print("\n a) Kill John, Ibrahim, and Maria to finish the job")
+        print("\n b) Plead guilty and try to win the case")
+        print()
+        choice3 = input("Choice: ")
+        if choice3.lower() == "a":
+          print("You are arrested and sent to prison for life")
+        elif choice3.lower() == "b":
+          sentence = random.randint(30,70)
+          if sentence > 60:
+            print("You got", sentence, "years in prison and died of old age")
+            print("Prison Death Ending - Old age (19/6)")
+          else:
+            print("You are arrested and sent to prison for", sentence, "years")
+            print()
+            
+          #Choice 4 - Serial Killer
+          choices = choices + 1
+          print("You can escape from prison. Which key do you pick?")
+          print("\n a) Blue Key")
+          print("\n b) Green Key")
+          print("\n c) Red Key")
+          print()
+          choice4 = input("Choice: ")
+          if choice4.lower() != "a" and choice3.lower() == "b":
+            print("You picked the wrong key and a guard saw you.")
+            print("You serve your 30 year sentence and are released")
+            print("Prison Release Ending (12/6)")
+          elif choice4.lower() != "a" and choice3.lower() == "a":
+            print("You picked the wrong key and a guard saw you.")
+            print("You die in prison becuase you have a life sentence")
+            print("Prison Death Ending (13/6)")
+          elif choice4.lower() == "a":
+            print("You picked the correct key and escaped from prison.")
+            print("You live in the woods next to Michael's dead body")
+            print()
+            print("Woods ending - Ibrahim (14/6)")
+
+
+  elif job.lower() == "d": #Lawyer
+    career = "Lawyer"
+    print("You got 4s in your GCSEs. Dont even try.")
+    print()
+    print("Uneducated ending (15/6)")
+
+
+  elif job.lower() == "e": #Chef
+    career = "Chef"
+    print("You have chosen to be a chef, but since no restaurant will hire you, you have to start your own")
+    #Choice 1
+    choices = choices + 1
+    print("Choose the name of your restaurant: ")
+    print("\n a) Fredbear's Family Diner")
+    print("\n b) EDP Cupcakes Limited")
+    print("\n c) Wajid's RGB Vapes")
+    print("\n d) Choose your own name")
+    print()
+    print("Tip: Choosing option a, b, or c will unlock specific options")
+    print()
+    restaurant = input("Choice: ")
+    print()
+    if restaurant.lower() == "a":
+      restaurant = "Fredbear's Family Diner"
+    elif restaurant.lower() == "b":
+      restaurant = "EDP Cupcakes Limited"
+    elif restaurant.lower() == "c":
+      restaurant = "Wajid's RGB Vapes"
+    elif restaurant.lower() == "d":
+      restaurant = input("Enter the name of your restaurant: ")
+
+    choice1 = restaurant
+      
+
+      
+    print(restaurant, "is ready to open")
+    #Choice 2
+    choices = choices + 1
+    print("What should be the first item on the menu?")
+    print("\n a) Fish and Chips")
+    print("\n b) Chicken Curry")
+    print("\n c) Pasta")
+    
+    if restaurant == "Fredbear's Family Diner":
+      print("\n d) Fredbear Special")
+      
+    elif restaurant == "EDP Cupcakes Limited":
+      print("\n d) EDP Cupcakes Special")
+      
+    elif restaurant == "Wajid's RGB Vapes":
+      print("\n d) RGB Vape 2000")
+    
+    else:
+      print("\n d) Mouldy Sandwhich")
+    
+    print()
+    choice2 = input("Choice: ")
+    if choice2.lower() == "d" and restaurant == "Fredbear's Family Diner":
+      print("The Fredbear Special attracts lots of attention")
+
+    elif choice2.lower() == "d" and restaurant == "EDP Cupcakes Limited":
+      print("Your EDP cupcakes lure in chilldren for naughty reasons. You are   sent to prison")
+      print()
+      #Choice 3
+      choices = choices + 1
+      print("You can escape from prison. Which key do you pick?")
+      print("\n a) Blue Key")
+      print("\n b) Green Key")
+      print("\n c) Red Key")
+      print()
+      choice3 = input("Choice: ")
+      if choice3.lower() != "a":
+        print("You picked the wrong key and a guard saw you.")
+        print("You serve your 30 year sentence and are released")
+        print("Prison Release Ending (12/6)")
+      elif choice3.lower() == "a":
+        print("You picked the correct key and escaped from prison.")
+        print("You live in the woods and eat your cupcakes alone")
+        print()
+        print("Woods ending - Cupcake (17/6)")
+
+    elif choice2.lower() == "d" and restaurant == "Wajid's RGB Vapes":
+      print("Dangerous chemicals in the RGB vapes leads to multiple deaths.")
+      sentence = random.randint(20,30)
+      print("You are arrested and sent to prison for", sentence, "years")
+      print()
+      #Repeat choice 4 serial killer
+      choices = choices + 1
+      print("You can escape from prison. Which key do you pick?")
+      print("\n a) Blue Key")
+      print("\n b) Green Key")
+      print("\n c) Red Key")
+      print()
+      choice3 = input("Choice: ")
+      if choice3.lower() != "a":
+        print("You picked the wrong key and a guard saw you.")
+        print("You serve your 30 year sentence and are released")
+        print("Prison Release Ending (12/6)")
+      elif choice3.lower() == "a":
+        print("You picked the correct key and escaped from prison.")
+        print("You live in the woods smoking your RGB Vapes")
+        print()
+        print("Woods ending - RGB Vapes (18/6)")
+    
+    
+
+# Main Program Ends Here
+  
+  print()
+
+
+  if career == "Lawyer":
+    print("Job     : Lawyer")
+  
+  elif choices == 1:
+    print("Job     :", career)
+    print("Choice 1: ", choice1)
+    print()
+    
+  elif choices == 2:
+    print("Job     :", career)
+    print("Choice 1: ", choice1)
+    print("Choice 2: ", choice2)
+    print()
+
+  elif choices == 3:
+    print("Job     :", career)
+    print("Choice 1: ", choice1)
+    print("Choice 2: ", choice2)
+    print("Choice 3: ", choice3)
+    print()
+
+  elif choices == 4:
+    print("Job     :", career)
+    print("Choice 1: ", choice1)
+    print("Choice 2: ", choice2)
+    print("Choice 3: ", choice3)
+    print("Choice 4: ", choice4)
+    print()
+
+  else:
+    print()
